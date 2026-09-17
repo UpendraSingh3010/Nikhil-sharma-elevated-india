@@ -58,7 +58,7 @@ export default function App() {
         {/* 3. The Bespoke Journey Flow: 4 Cinematic Movements */}
         <JourneyFlow />
 
-        {/* 4. Curations & The Strategic Ecosystem (Elevated India, Fabulous Media, GoCommercially, NS Transform) */}
+        {/* 4. Curations & The Strategic Ecosystem (Elevated India, Fabulous Media, NS Transform) */}
         <CurationsAndVentures />
 
         {/* 5. The Elevated Philosophy: 3 Tenets & The Comparison Standard */}

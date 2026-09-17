@@ -60,7 +60,7 @@ export const nikhilData = {
         id: "innovator",
         title: "Ecosystem Builder",
         subtitle: "18+ Years Mastery",
-        description: "Founder of Fabulous Media, GoCommercially, and NS Transform, bringing technological precision to high-end hospitality.",
+        description: "Founder of Elevated India, Fabulous Media, and NS Transform, bringing technological precision and bespoke curation to high-end hospitality.",
         icon: "Cpu"
       }
     ]
@@ -215,84 +215,136 @@ export const nikhilData = {
 
   ecosystem: [
     {
-      id: "elevated-india",
-      name: "Elevated India",
-      role: "Founder & Chief Executive",
-      established: "2021",
-      image: "/assets/twilight_shot.png",
-      badge: "Founding Flagship",
-      metric: "Est. 2021 · Ultra-Luxury Travel House",
-      logo: "/assets/brand/about-go.png",
-      category: "Ultra-Luxury Experiential Travel",
-      tagline: "Private travel house for India’s rarest journeys",
-      description: "Elevated India designs and operates bespoke luxury journeys across India and Nepal. Powered by sovereign ground operations, proprietary fleet, and licensed private specialists.",
+      id: "anandbodh",
+      abbr: "AB",
+      name: "AnandBodh",
+      role: "Founder & Custodian",
+      established: "2019",
+      image: "/assets/royal_indian_heritage.png",
+      logo: "/assets/anandbodhlogo.jpg",
+      logoBg: "rgb(255, 255, 255)",
+      badge: "Wellness & Life Architecture",
+      metric: "The Happy Life Umbrella",
+      category: "Wellness & Human Flourishing",
+      tagline: "Wellness programmes built around living well, not only working well",
+      description: "The Happy Life umbrella — wellness programmes built around living well, not only working well.",
       highlights: [
-        "Awarded Excellence in Curated Luxury Travel (ETNOW Conclave 2026)",
-        "100% In-house operations via India Personal Tours infrastructure",
-        "Serving heads of state, global founders, and high-net-worth families"
+        "Executive wellness architectures for visionary founders and leaders",
+        "Holistic programmes bridging mindful presence with modern leadership",
+        "Creating sustainable life balance beyond the workplace"
       ],
-      link: "https://www.elevatedindia.com",
-      linkText: "Visit Elevated India"
+      link: "#contact",
+      linkText: "Know More"
+    },
+    {
+      id: "iconsbase",
+      abbr: "IB",
+      name: "IconsBase",
+      role: "Founder & Chief Strategist",
+      established: "2021",
+      image: "/assets/heritage-study.png",
+      logo: "/assets/logo-full-0774772.png",
+      logoBg: "rgb(255, 255, 255)",
+      badge: "Venture Strategy & Scale",
+      metric: "Strategic Execution & Opportunities",
+      category: "Innovation & Venture Strategy",
+      tagline: "Connecting innovative ideas with strategic execution and market opportunities",
+      description: "Connecting innovative ideas with strategic execution and market opportunities.",
+      highlights: [
+        "Connecting high-potential ideas with disciplined execution frameworks",
+        "Strategic capital and market scaling advisory for emerging enterprises",
+        "Catalyzing market opportunities across modern technology and commerce"
+      ],
+      link: "#contact",
+      linkText: "Know More"
+    },
+    {
+      id: "easehire",
+      abbr: "EH",
+      name: "EaseHire",
+      role: "Founder & Board Member",
+      established: "2022",
+      image: "/assets/hero-twilight.png",
+      logo: "/assets/easehire-0181375.png",
+      logoBg: "rgb(255, 255, 255)",
+      badge: "HR Tech & SaaS",
+      metric: "Smart Recruitment SaaS Platform",
+      category: "Recruitment Software & HR Tech",
+      tagline: "Smart recruitment software that simplifies hiring and talent management processes",
+      description: "Smart recruitment software that simplifies hiring and talent management processes.",
+      highlights: [
+        "End-to-end recruitment lifecycle automation for high-velocity teams",
+        "Intelligent candidate screening and seamless workflow orchestration",
+        "Significantly compressing time-to-hire for modern organizations"
+      ],
+      link: "#contact",
+      linkText: "Know More"
     },
     {
       id: "fabulous-media",
-      name: "Fabulous Media",
+      abbr: "FAB",
+      name: "Fabulous.Media",
       role: "Founder & CEO",
       established: "2008",
-      image: "/assets/brand/overview/Overview-optimization8-5694826.png",
-      badge: "Digital Growth Architecture",
-      metric: "Est. 2008 · 15+ Countries · 800+ Brands",
-      logo: "/assets/brand/fabulous-logo.png",
-      category: "Digital Growth & Media Architecture",
-      tagline: "Transforming ambitious enterprises since 2008",
-      description: "A premier full-service digital agency delivering branding, performance marketing, enterprise web architecture, and global acquisition systems for leading brands worldwide.",
+      image: "/assets/curated/images.unsplash.com/photo-1548013146-72479768bada.w_1000_q_80.jpg",
+      logo: "/assets/digital-agency-2669171.png",
+      logoBg: "rgb(0, 0, 0)",
+      badge: "Media & Marketing Network",
+      metric: "Global Network · Infabio & The Bad Company",
+      category: "Media & Marketing Network",
+      tagline: "The media and marketing network, with Infabio and The Bad Company among its agencies",
+      description: "The media and marketing network, with Infabio and The Bad Company among its agencies.",
       highlights: [
-        "Architected Elevated India's custom digital & booking infrastructure",
-        "18+ years of sustained client growth across 15+ countries",
-        "Over 800+ enterprise brands scaled globally"
+        "Global digital marketing and enterprise media network established in 2008",
+        "Home to specialized brand agencies Infabio and The Bad Company",
+        "Scaled hundreds of ambitious enterprises across 15+ countries"
       ],
       link: "https://fabulousmedia.in",
-      linkText: "Visit Fabulous Media"
+      linkText: "Know More"
     },
     {
       id: "gocommercially",
+      abbr: "GO",
       name: "GoCommercially",
-      role: "Founder & Chairman",
+      role: "Founder & Chief Strategist",
       established: "2020",
-      image: "/assets/brand/overview/Overview-optimization10-5694825.png",
-      badge: "Global Marketing Platform",
-      metric: "Est. 2020 · Enterprise Growth Platform",
-      logo: "/assets/brand/gocommercially-logo.png",
-      category: "Global Marketing Platform",
-      tagline: "The platform, process, and professionals for double business growth",
-      description: "A unified enterprise platform providing businesses with growth engines, certified marketing talent on demand, and automated multi-channel client acquisition systems.",
+      image: "/assets/curated/images.pexels.com/photos/33726142/pexels-photo-33726142.auto_compress_cs_tinysrgb_w_1000.jpeg",
+      logo: "/assets/gocommercially-logo-0138019_1-7958750.webp",
+      logoBg: "rgb(255, 255, 255)",
+      badge: "Commercial Growth",
+      metric: "Optimization & Scale Frameworks",
+      category: "Growth Strategies & Scaling",
+      tagline: "Comprehensive growth strategies and optimization frameworks for scaling businesses",
+      description: "Comprehensive growth strategies and optimization frameworks for scaling businesses.",
       highlights: [
-        "Integrated CRM, automation, and cross-channel marketing suites",
-        "Eliminates dependency on fragmented agency retainers",
-        "Trusted by hundreds of scaling mid-market enterprises"
+        "Full-funnel commercial architecture for enterprise acceleration",
+        "Data-driven optimization systems for multi-channel revenue expansion",
+        "Battle-tested playbooks scaling market share and unit economics"
       ],
       link: "https://gocommercially.com",
-      linkText: "Visit GoCommercially"
+      linkText: "Know More"
     },
     {
-      id: "ns-transform",
-      name: "NS Transform 2026",
-      role: "Chief Mentor & Investor",
+      id: "vanishing-india",
+      abbr: "VI",
+      name: "Vanishing India",
+      role: "Patron & Custodian",
       established: "2023",
-      image: "/assets/nikhil_sharma.jpeg",
-      badge: "Executive Mentorship & Advisory",
-      metric: "Est. 2023 · 500+ Founders Mentored",
-      logo: "/assets/brand/icons/pro-6331809.svg",
-      category: "Executive Advisory & Angel Investment",
-      tagline: "Digital transformation, audits, and investor-ready frameworks",
-      description: "Nikhil Sharma's executive mentorship vehicle helping ambitious startups, founders, and enterprises unlock exponential valuations, audit digital bottlenecks, and scale sustainably.",
+      image: "/assets/ladakh_royal_silk.png",
+      logo: "/assets/vanishing_india-7270035.png",
+      logoBg: "rgb(0, 0, 0)",
+      badge: "Living Cultural Heritage",
+      metric: "People, Art & Living Traditions",
+      category: "Living Heritage & Cultural Archive",
+      tagline: "Journey Through People, Art, and Living Traditions",
+      description: "Journey Through People, Art, and Living Traditions",
       highlights: [
-        "Mentored 500+ founders and early-stage ventures",
-        "Proprietary ROI and digital transformation auditing frameworks",
-        "Active investor across travel-tech, AI, and consumer platforms"
+        "Documenting and preserving endangered indigenous arts and artisanal crafts",
+        "Deep cultural expeditions across remote master weaver and craft communities",
+        "Direct patron support sustaining rare living heritage traditions"
       ],
-      link: "https://www.nikhilsharma.com",
-      linkText: "Explore Advisory"
+      link: "#contact",
+      linkText: "Know More"
     }
   ],
 
@@ -415,67 +467,67 @@ export const nikhilData = {
   gallery: [
     {
       id: "gal-1",
-      category: "Royal Palaces",
-      title: "Mehrangarh Fort & Blue City Sunset",
-      location: "Jodhpur, Rajasthan",
+      category: "Desert Sanctuaries",
+      title: "Thar Desert Sunset Traverse",
+      location: "Sam Dunes, Jaisalmer",
       image: "/assets/curated/images.pexels.com/photos/36033417/pexels-photo-36033417.auto_compress_cs_tinysrgb_w_1000.jpeg",
-      caption: "Private after-hours rampart access as dusk blankets the blue citadels of Marwar."
+      caption: "Silently navigating the windswept golden dunes of the Great Indian Desert at twilight."
     },
     {
       id: "gal-2",
-      category: "Sacred Sanctuaries",
-      title: "Kerala Backwaters Private Kettuvalam",
-      location: "Kumarakom & Alleppey",
+      category: "Royal Palaces",
+      title: "Taj Mahal in Solitary Dawn",
+      location: "Agra, Uttar Pradesh",
       image: "/assets/curated/images.unsplash.com/photo-1587135941948-670b381f08ce.w_1000_q_80.jpg",
-      caption: "Drifting in serene silence on bespoke wooden houseboats through tranquil palm-fringed lagoons."
+      caption: "Private sunrise viewing of the timeless white marble mausoleum before public opening hours."
     },
     {
       id: "gal-3",
-      category: "Desert Sanctuaries",
-      title: "Thar Desert Sunset Encampment",
-      location: "Sam Dunes, Jaisalmer",
-      image: "/assets/curated/images.unsplash.com/photo-1526711657229-e7e080ed7aa1.w_1000_q_80.jpg",
-      caption: "Slow evenings in golden sands, designed around complete silence and campfire music."
+      category: "Royal Palaces",
+      title: "The Great Mughal Archway",
+      location: "Fatehpur Sikri & Agra",
+      image: "/assets/curated/images.unsplash.com/photo-1548013146-72479768bada.w_1000_q_80.jpg",
+      caption: "Carved red sandstone arches framing classical Mughal symmetry and marble domes."
     },
     {
       id: "gal-4",
-      category: "Heritage",
-      title: "Ancient Carved Temple Mandapas",
-      location: "Khajuraho & Hampi",
+      category: "Artisans & Craft",
+      title: "Desert Folklore & Royal Attire",
+      location: "Marwar, Rajasthan",
       image: "/assets/curated/images.unsplash.com/photo-1639575668829-7e59e0195b06.q_80_w_1470_auto_format_fit_crop_ixlib_rb-4.1.0_ixid_M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA_3D_3D.jpg",
-      caption: "Intricate 10th-century stone carvings and sacred acoustics interpreted by private archaeologists."
+      caption: "Hereditary folk artists in vibrant bandhani turbans and traditional royal festival garments."
     },
     {
       id: "gal-5",
-      category: "Artisans & Craft",
-      title: "Seven Generations of Block Printing",
-      location: "Bagru Village, Rajasthan",
+      category: "Festivals",
+      title: "Festival of Sacred Colors (Holi)",
+      location: "Braj & Jaipur",
       image: "/assets/curated/images.pexels.com/photos/4937284/pexels-photo-4937284.auto_compress_cs_tinysrgb_w_1000.jpeg",
-      caption: "Master artisan hands working with carved teak blocks and natural vegetable dyes."
+      caption: "Joyous cultural immersion with organic gulal powders and royal festival hospitality."
     },
     {
       id: "gal-6",
       category: "Royal Palaces",
       title: "Illuminated Palace Courtyards",
-      location: "Udaipur, Rajasthan",
-      image: "/assets/curated/images.pexels.com/photos/36418053/pexels-photo-36418053.auto_compress_cs_tinysrgb_w_1200.jpeg",
-      caption: "Palace stays chosen for architecture, living lineage, and genuine soul."
+      location: "Jaisalmer & Udaipur",
+      image: "/assets/curated/images.pexels.com/photos/33726142/pexels-photo-33726142.auto_compress_cs_tinysrgb_w_1000.jpeg",
+      caption: "Lantern-lit royal courtyards and carved jharokha balconies under star-lit desert skies."
     },
     {
       id: "gal-7",
-      category: "Festivals",
-      title: "Celebration of Colors (Holi)",
-      location: "Mathura & Jaipur",
+      category: "Royal Palaces",
+      title: "Amer Fort in Sunset Glow",
+      location: "Jaipur, Rajasthan",
       image: "/assets/curated/images.pexels.com/photos/9179927/pexels-photo-9179927.auto_compress_cs_tinysrgb_w_1200.jpeg",
-      caption: "Safe, joyous private festival access with herbal powders, organic flowers, and royal blessings."
+      caption: "Centuries-old Rajput fortress ramparts perched across the rugged ridge of the Aravalli hills."
     },
     {
       id: "gal-8",
-      category: "Heritage",
-      title: "Carved Sandstone Archways",
-      location: "Fatehpur Sikri & Agra",
-      image: "/assets/curated/images.unsplash.com/photo-1524492412937-b28074a5d7da.w_1000_q_80.jpg",
-      caption: "Centuries of Mughal and Rajput stonecraft revealed through expert architectural eyes."
+      category: "Festivals",
+      title: "Pushkar Camel Pageant",
+      location: "Pushkar, Rajasthan",
+      image: "/assets/curated/images.unsplash.com/photo-1587538015441-75c593fbcafa.q_80_w_688_auto_format_fit_crop_ixlib_rb-4.1.0_ixid_M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA_3D_3D.jpg",
+      caption: "Traditional camel adornment with mirrored beadwork and marigold garlands at the historic desert fair."
     }
   ],
 

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -18,27 +19,38 @@ export default {
           borderLight: "#334155",
           muted: "#94A3B8",
           subtle: "#64748B",
+          green: "#008060",
+          lightBlue: "#0ea5e9",
         },
-        // Official GoCommercially Brand Palette from repository
-        official: {
-          lime: "#8BDD59",
-          limeHover: "#7AC949",
-          limeGlow: "rgba(139, 221, 89, 0.4)",
-          gold: "#FAC51E",
-          cyan: "#23A3EA",
-          navy: "#0F227E",
-          orange: "#FF8800",
-          charcoal: "#1F232B",
-          deepNavy: "#1E2C3C",
-          text: "#3E3E3E",
+        'brand-green': '#008060',
+        'brand-light-blue': '#0ea5e9',
+        royal: {
+          gold: "#C9A84C",
+          goldLight: "#E6B84A",
+          goldDark: "#9B7B2C",
+          goldGlow: "#FDF6E2",
+          champagne: "#F5E6C8",
+        },
+        platinum: {
+          DEFAULT: "#B8C4D0",
+          light: "#E2E8F0",
+          dark: "#64748B",
+          shimmer: "#F8FAFC",
+        },
+        obsidian: {
+          DEFAULT: "#050508",
+          light: "#0A0D14",
+          card: "#0E131F",
+          border: "rgba(201, 168, 76, 0.15)",
+          glass: "rgba(5, 5, 8, 0.75)",
         },
         accent: {
-          DEFAULT: "#F59E0B",
-          hover: "#D97706",
-          dark: "#B45309",
-          light: "#FEF3C7",
-          gradientFrom: "#F59E0B",
-          gradientTo: "#EA580C",
+          DEFAULT: "#C9A84C",
+          hover: "#E6B84A",
+          dark: "#9B7B2C",
+          light: "#FDF6E2",
+          gradientFrom: "#C9A84C",
+          gradientTo: "#E6B84A",
         },
         electric: {
           blue: "#3B82F6",
@@ -47,17 +59,40 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', "system-ui", "-apple-system", "sans-serif"],
-        serif: ['"Playfair Display"', '"Cormorant Garamond"', "Georgia", "serif"],
-        display: ['"Cinzel"', '"Playfair Display"', "serif"],
+        sans: ['"Inter"', '"Plus Jakarta Sans"', "system-ui", "-apple-system", "sans-serif"],
+        serif: ['"Fraunces"', '"Playfair Display"', '"Cormorant Garamond"', "Georgia", "serif"],
+        display: ['"Fraunces"', '"Cinzel"', '"Playfair Display"', "serif"],
+        heading: ['"Fraunces"', '"Playfair Display"', "serif"],
+        signature: ['"Great Vibes"', '"Pinyon Script"', '"Alex Brush"', 'cursive'],
+        cursive: ['"Great Vibes"', '"Pinyon Script"', '"Alex Brush"', 'cursive'],
       },
       boxShadow: {
-        glow: "0 10px 25px -5px rgba(245, 158, 11, 0.4)",
-        "glow-lg": "0 20px 40px -10px rgba(245, 158, 11, 0.5)",
+        glow: "0 10px 25px -5px rgba(201, 168, 76, 0.4)",
+        "glow-lg": "0 20px 40px -10px rgba(201, 168, 76, 0.5)",
+        "gold-glow": "0 0 25px rgba(201, 168, 76, 0.35)",
+        "gold-glow-lg": "0 0 45px rgba(201, 168, 76, 0.45)",
+        "platinum-glow": "0 0 25px rgba(184, 196, 208, 0.25)",
         card: "0 4px 20px -2px rgba(0, 0, 0, 0.35)",
-        "card-hover": "0 12px 30px -4px rgba(0, 0, 0, 0.5), 0 0 25px -2px rgba(245, 158, 11, 0.25)",
+        "card-hover": "0 12px 30px -4px rgba(0, 0, 0, 0.5), 0 0 25px -2px rgba(201, 168, 76, 0.25)",
+        "obsidian-card": "0 10px 30px -5px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(201, 168, 76, 0.15)",
+        "obsidian-card-hover": "0 20px 45px -10px rgba(0, 0, 0, 0.9), 0 0 30px rgba(201, 168, 76, 0.25), inset 0 1px 0 rgba(201, 168, 76, 0.35)",
         mega: "0 25px 60px -15px rgba(0, 0, 0, 0.7)",
       },
+      animation: {
+        'marquee': 'marquee 28s linear infinite',
+        'marquee-slow': 'marquee 40s linear infinite',
+        'float-slow': 'float 7s ease-in-out infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-12px)' },
+        }
+      }
     },
   },
   plugins: [],

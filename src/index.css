@@ -3,28 +3,27 @@
 @tailwind utilities;
 
 :root {
-  /* Official GoCommercially Brand Design Tokens from Repository */
-  --color-primary: rgba(139, 221, 89, 1);     /* #8BDD59 - Signature Growth Lime Green */
-  --color-secondary1: rgba(250, 197, 30, 1);  /* #FAC51E - Gold / Yellow */
-  --color-secondary2: rgba(35, 163, 234, 1);  /* #23A3EA - Sky Cyan */
-  --color-secondary3: rgba(15, 34, 126, 1);   /* #0F227E - Enterprise Deep Navy */
-  --color-secondary4: rgba(255, 136, 0, 1);   /* #FF8800 - Vibrant Orange */
-  --color-charcoal: #1F232B;
-  --color-navy: #1E2C3C;
+  --color-gold-primary: #C9A84C;
+  --color-gold-light: #FDF6E2;
+  --color-gold-hover: #E6B84A;
+  --color-gold-dark: #9B7B2C;
+  --color-platinum: #B8C4D0;
+  --color-obsidian: #050508;
+  --color-obsidian-card: #0A0D14;
 }
 
 @layer base {
   body {
-    background-color: #06080E;
+    background-color: #050508;
     color: #F1F5F9;
-    font-family: 'Plus Jakarta Sans', 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   /* When light mode is active on root */
   html.light body {
-    background-color: #F8FAFC;
+    background-color: #FBFBFA;
     color: #0F172A;
   }
 
@@ -33,20 +32,20 @@
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #06080E;
+    background: #050508;
   }
   html.light ::-webkit-scrollbar-track {
     background: #F1F5F9;
   }
   ::-webkit-scrollbar-thumb {
-    background: #1E293B;
+    background: #1A2234;
     border-radius: 4px;
   }
   html.light ::-webkit-scrollbar-thumb {
     background: #CBD5E1;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #334155;
+    background: #C9A84C;
   }
   html.light ::-webkit-scrollbar-thumb:hover {
     background: #94A3B8;
@@ -55,36 +54,78 @@
 
 @layer utilities {
   .bg-radial-gradient {
-    background: radial-gradient(ellipse at top, #1E293B 0%, #06080E 70%);
+    background: radial-gradient(ellipse at top, #1A2234 0%, #050508 70%);
   }
   html.light .bg-radial-gradient {
-    background: radial-gradient(ellipse at top, #E2E8F0 0%, #F8FAFC 70%);
+    background: radial-gradient(ellipse at top, #E2E8F0 0%, #FBFBFA 70%);
   }
 
-  /* Ultra-Premium Ambient Luxury Background with subtle warm gold and royal lapis glows */
+  .font-signature, .font-cursive {
+    font-family: 'Great Vibes', 'Alex Brush', 'Pinyon Script', cursive;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Ultra-Premium Ambient Luxury Background with Royal Gold and Obsidian Atmosphere */
   .bg-ambient-luxury {
-    background-color: #06080E;
+    background-color: #050508;
     background-image: 
-      radial-gradient(ellipse 90% 50% at 50% -15%, rgba(245, 158, 11, 0.12), transparent 70%),
-      radial-gradient(ellipse 70% 45% at 95% 35%, rgba(30, 58, 138, 0.12), transparent 60%),
-      radial-gradient(ellipse 70% 45% at 5% 65%, rgba(217, 119, 6, 0.08), transparent 60%),
-      radial-gradient(ellipse 80% 50% at 50% 95%, rgba(30, 58, 138, 0.09), transparent 70%);
+      radial-gradient(ellipse 90% 50% at 50% -15%, rgba(201, 168, 76, 0.12), transparent 70%),
+      radial-gradient(ellipse 70% 45% at 95% 35%, rgba(18, 30, 50, 0.22), transparent 60%),
+      radial-gradient(ellipse 70% 45% at 5% 65%, rgba(201, 168, 76, 0.08), transparent 60%),
+      radial-gradient(ellipse 80% 50% at 50% 95%, rgba(18, 30, 50, 0.18), transparent 70%);
   }
   html.light .bg-ambient-luxury {
-    background-color: #FAF9F5;
+    background-color: #FBFBFA;
     background-image: 
-      radial-gradient(ellipse 95% 60% at 50% -10%, rgba(245, 158, 11, 0.20), transparent 65%),
-      radial-gradient(ellipse 75% 50% at 95% 25%, rgba(99, 102, 241, 0.12), transparent 60%),
-      radial-gradient(ellipse 70% 50% at 5% 55%, rgba(16, 185, 129, 0.10), transparent 60%),
-      radial-gradient(ellipse 85% 55% at 50% 95%, rgba(245, 158, 11, 0.16), transparent 70%),
-      radial-gradient(circle at 80% 80%, rgba(244, 63, 94, 0.07), transparent 50%);
+      radial-gradient(ellipse 95% 60% at 50% -10%, rgba(201, 168, 76, 0.18), transparent 65%),
+      radial-gradient(ellipse 75% 50% at 95% 25%, rgba(99, 102, 241, 0.08), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 5% 55%, rgba(16, 185, 129, 0.07), transparent 60%),
+      radial-gradient(ellipse 85% 55% at 50% 95%, rgba(201, 168, 76, 0.14), transparent 70%),
+      radial-gradient(circle at 80% 80%, rgba(201, 168, 76, 0.05), transparent 50%);
     background-attachment: fixed;
+  }
+
+  /* Frosted Obsidian Glassmorphism Container */
+  .glass-obsidian {
+    background: linear-gradient(165deg, rgba(14, 19, 31, 0.82) 0%, rgba(7, 10, 16, 0.94) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.16);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  html.light .glass-obsidian {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(201, 168, 76, 0.22);
+    box-shadow: 
+      0 14px 34px -10px rgba(15, 23, 42, 0.08),
+      0 2px 8px -2px rgba(201, 168, 76, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .glass-obsidian-hover:hover {
+    transform: translateY(-5px);
+    border-color: rgba(201, 168, 76, 0.45);
+    box-shadow: 
+      0 24px 50px -12px rgba(0, 0, 0, 0.88),
+      0 0 35px -5px rgba(201, 168, 76, 0.22),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  html.light .glass-obsidian-hover:hover {
+    transform: translateY(-5px);
+    border-color: rgba(201, 168, 76, 0.5);
+    box-shadow: 
+      0 24px 45px -12px rgba(201, 168, 76, 0.18),
+      0 8px 20px -4px rgba(15, 23, 42, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
   }
 
   /* Interactive Luxury Card with Shimmer Top Edge and Hover Elevation */
   .luxury-box {
-    background: linear-gradient(165deg, rgba(16, 22, 34, 0.85) 0%, rgba(9, 13, 22, 0.95) 100%);
-    border: 1px solid rgba(245, 158, 11, 0.16);
+    background: linear-gradient(165deg, rgba(14, 19, 31, 0.85) 0%, rgba(7, 10, 17, 0.95) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.16);
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -92,11 +133,11 @@
     position: relative;
   }
   html.light .luxury-box {
-    background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(217, 119, 6, 0.22);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(201, 168, 76, 0.22);
     box-shadow: 
       0 14px 34px -10px rgba(15, 23, 42, 0.08),
-      0 2px 8px -2px rgba(217, 119, 6, 0.06),
+      0 2px 8px -2px rgba(201, 168, 76, 0.06),
       inset 0 1px 0 rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -109,29 +150,29 @@
     left: 12%;
     right: 12%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.55), transparent);
+    background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.55), transparent);
     opacity: 0.35;
     transition: opacity 0.4s ease, left 0.4s ease, right 0.4s ease;
     pointer-events: none;
   }
   html.light .luxury-box::after {
-    background: linear-gradient(90deg, transparent, rgba(217, 119, 6, 0.7), rgba(245, 158, 11, 0.9), rgba(217, 119, 6, 0.7), transparent);
+    background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.7), rgba(230, 184, 74, 0.9), rgba(201, 168, 76, 0.7), transparent);
     opacity: 0.6;
   }
 
   .luxury-box:hover {
     transform: translateY(-6px);
-    border-color: rgba(245, 158, 11, 0.45);
+    border-color: rgba(201, 168, 76, 0.45);
     box-shadow: 
       0 24px 50px -12px rgba(0, 0, 0, 0.88),
-      0 0 35px -5px rgba(245, 158, 11, 0.22),
+      0 0 35px -5px rgba(201, 168, 76, 0.22),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   html.light .luxury-box:hover {
     transform: translateY(-6px);
-    border-color: rgba(217, 119, 6, 0.5);
+    border-color: rgba(201, 168, 76, 0.5);
     box-shadow: 
-      0 24px 45px -12px rgba(217, 119, 6, 0.18),
+      0 24px 45px -12px rgba(201, 168, 76, 0.18),
       0 8px 20px -4px rgba(15, 23, 42, 0.06),
       inset 0 1px 0 rgba(255, 255, 255, 1);
   }
@@ -223,35 +264,41 @@
     will-change: transform, opacity;
   }
 
-  /* Official GoCommercially Signature Lime Gradient */
-  .text-gradient-lime {
-    background: linear-gradient(135deg, #FFFFFF 0%, #B4F488 35%, #8BDD59 75%, #56AB2F 100%);
+  /* Royal Gold Gradient for Highlights & Titles */
+  .text-gradient-gold-royal {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F5E6C8 25%, #C9A84C 65%, #9B7B2C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 10px rgba(201, 168, 76, 0.25));
+  }
+  html.light .text-gradient-gold-royal {
+    background: linear-gradient(135deg, #78350F 0%, #9B7B2C 30%, #C9A84C 70%, #9B7B2C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: none;
+  }
+
+  /* Crisp Platinum Gradient for Subheadings & Accents */
+  .text-gradient-platinum {
+    background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 50%, #B8C4D0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  html.light .text-gradient-lime {
-    background: linear-gradient(135deg, #15803D 0%, #16A34A 45%, #22C55E 100%);
+  html.light .text-gradient-platinum {
+    background: linear-gradient(180deg, #0F172A 0%, #1E293B 50%, #475569 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-
-  .glow-lime {
-    box-shadow: 0 0 25px -4px rgba(139, 221, 89, 0.4);
-  }
-
-  .glow-cyan {
-    box-shadow: 0 0 25px -4px rgba(35, 163, 234, 0.4);
   }
 
   /* Ultra-Premium Champagne Gold Gradient */
   .text-gradient-amber {
-    background: linear-gradient(135deg, #FFFBEB 0%, #FDE047 25%, #F59E0B 65%, #D97706 100%);
+    background: linear-gradient(135deg, #FFFBEB 0%, #F5E6C8 25%, #C9A84C 65%, #9B7B2C 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 10px rgba(245, 158, 11, 0.2));
+    filter: drop-shadow(0 2px 10px rgba(201, 168, 76, 0.2));
   }
   html.light .text-gradient-amber {
-    background: linear-gradient(135deg, #B45309 0%, #D97706 40%, #B45309 100%);
+    background: linear-gradient(135deg, #9B7B2C 0%, #C9A84C 40%, #9B7B2C 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: none;
@@ -270,12 +317,12 @@
   }
 
   .text-gradient-gold {
-    background: linear-gradient(135deg, #FFFDF5 0%, #FEF08A 40%, #F59E0B 100%);
+    background: linear-gradient(135deg, #FFFDF5 0%, #FDF6E2 40%, #C9A84C 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   html.light .text-gradient-gold {
-    background: linear-gradient(135deg, #78350F 0%, #B45309 30%, #D97706 70%, #F59E0B 100%);
+    background: linear-gradient(135deg, #78350F 0%, #9B7B2C 30%, #C9A84C 70%, #E6B84A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -299,7 +346,17 @@
   }
 
   .border-glass-amber {
-    border-color: rgba(245, 158, 11, 0.25);
+    border-color: rgba(201, 168, 76, 0.25);
+  }
+  html.light .border-glass-amber {
+    border-color: rgba(201, 168, 76, 0.35);
+  }
+
+  .border-platinum-glow {
+    border: 1px solid rgba(184, 196, 208, 0.25);
+  }
+  html.light .border-platinum-glow {
+    border: 1px solid rgba(184, 196, 208, 0.45);
   }
 
   .bg-glass {
@@ -314,7 +371,7 @@
   }
 
   .bg-glass-dark {
-    background: rgba(7, 10, 17, 0.85);
+    background: rgba(5, 5, 8, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -326,26 +383,26 @@
 
   /* Frosted Crystal Glass Card */
   .glass-card-premium {
-    background: linear-gradient(135deg, rgba(20, 29, 47, 0.6) 0%, rgba(11, 15, 25, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(14, 19, 31, 0.6) 0%, rgba(8, 11, 18, 0.85) 100%);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(201, 168, 76, 0.12);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
   html.light .glass-card-premium {
     background: #FFFFFF;
-    border: 1px solid rgba(226, 232, 240, 0.9);
+    border: 1px solid rgba(201, 168, 76, 0.18);
     box-shadow: 0 8px 24px 0 rgba(148, 163, 184, 0.15);
   }
 
   .glass-card-premium:hover {
-    border-color: rgba(245, 158, 11, 0.35);
-    box-shadow: 0 12px 35px -10px rgba(245, 158, 11, 0.18);
+    border-color: rgba(201, 168, 76, 0.4);
+    box-shadow: 0 12px 35px -10px rgba(201, 168, 76, 0.22);
   }
 
   /* Micro Mesh Background */
   .mesh-dark {
-    background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(201, 168, 76, 0.06) 1px, transparent 1px);
     background-size: 24px 24px;
   }
   html.light .mesh-dark {
@@ -355,30 +412,48 @@
 
   /* Ultra-Premium Matte Noise Texture */
   .bg-noise {
-    background-image: url("data:image/svg+xml,%3Csvg width='256' height='256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.07'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='256' height='256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
   }
 
   /* Atmospheric Royal Hero Fog */
   .hero-fog {
     pointer-events: none;
-    background: radial-gradient(circle at 18% 22%, rgba(245, 158, 11, 0.16), transparent 30%),
-                radial-gradient(circle at 82% 20%, rgba(251, 191, 36, 0.13), transparent 32%),
-                radial-gradient(circle at 50% 85%, rgba(255, 255, 255, 0.04), transparent 40%);
+    background: radial-gradient(circle at 18% 22%, rgba(201, 168, 76, 0.16), transparent 30%),
+                radial-gradient(circle at 82% 20%, rgba(230, 184, 74, 0.13), transparent 32%),
+                radial-gradient(circle at 50% 85%, rgba(184, 196, 208, 0.06), transparent 40%);
     position: absolute;
     inset: 0;
   }
 
   /* Interactive Cursor Spotlight Glow */
   .hero-spotlight {
-    background: radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 50%), rgba(255, 184, 88, 0.22), transparent 28%);
+    background: radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 50%), rgba(201, 168, 76, 0.2), transparent 28%);
     pointer-events: none;
     mix-blend-mode: screen;
     position: absolute;
     inset: 0;
   }
 
+  /* Constellation Pulse & Drift */
+  @keyframes constellationPulse {
+    0%, 100% { opacity: 0.25; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.2); }
+  }
+  .animate-constellation {
+    animation: constellationPulse 5s ease-in-out infinite;
+  }
+
+  @keyframes floatConstellation {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    33% { transform: translateY(-8px) translateX(5px); }
+    66% { transform: translateY(5px) translateX(-6px); }
+  }
+  .animate-float-constellation {
+    animation: floatConstellation 8s ease-in-out infinite;
+  }
+
   .font-heading {
-    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Fraunces', 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
   }
 }
 
@@ -388,6 +463,7 @@
 
 html.light {
   /* Container & canvas overrides - ensures no dark black sections remain in light mode */
+  .bg-\[\#050508\],
   .bg-\[\#06080E\],
   .bg-\[\#070A11\],
   .bg-\[\#070A10\],
@@ -395,14 +471,18 @@ html.light {
   .bg-\[\#04060A\],
   .bg-\[\#0B0F19\],
   .bg-\[\#0A0E18\],
-  .bg-\[\#0A0E1A\] {
-    background-color: #F8FAFC !important;
+  .bg-\[\#0A0E1A\],
+  .bg-\[\#0A0D14\] {
+    background-color: #FBFBFA !important;
   }
 
   /* Card and elevated surface overrides */
+  .bg-\[\#0E131F\],
   .bg-\[\#0F1523\],
   .bg-\[\#0F172A\],
   .bg-\[\#0F172A\]\/70,
+  .bg-\[\#0F172A\]\/80,
+  .bg-\[\#0F172A\]\/90,
   .bg-\[\#0F172A\]\/80,
   .bg-\[\#0F172A\]\/90,
   .bg-\[\#111827\],
@@ -695,23 +775,6 @@ html.light {
   .bg-\[\#05070C\] {
     background-color: #FFFFFF !important;
     border-top: 1px solid rgba(217, 119, 6, 0.22) !important;
-  }
-
-  /* Brand Logo specific tweaks */
-  .brand-logo-badge {
-    background-color: #FFFFFF !important;
-  }
-
-  /* Navigation Mega Menu Icon Badges - ensure high-contrast dark tile so white & luminous icons are crisp & visible in light mode */
-  .nav-icon-badge {
-    background-color: #0B0F19 !important;
-    border-color: #1E293B !important;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 2px -1px rgba(0, 0, 0, 0.1) !important;
-  }
-
-  .group:hover .nav-icon-badge {
-    border-color: rgba(245, 158, 11, 0.6) !important;
-    background-color: #111827 !important;
   }
 
   /* Powered By Credit Badge in Light Mode */

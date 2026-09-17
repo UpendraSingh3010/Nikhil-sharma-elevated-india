@@ -31,6 +31,18 @@ export const Navbar = () => {
   const scrollToSection = (e, href) => {
     e.preventDefault();
     setMobileMenuOpen(false);
+    if (href === '#ecosystem') {
+      window.dispatchEvent(new CustomEvent('switch-tab', { detail: 'ecosystem' }));
+      const el = document.querySelector('#curations') || document.querySelector('#ecosystem');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    if (href === '#curations') {
+      window.dispatchEvent(new CustomEvent('switch-tab', { detail: 'curations' }));
+      const el = document.querySelector('#curations');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -43,40 +55,32 @@ export const Navbar = () => {
         className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
           scrolled
             ? isDark
-              ? 'bg-[#070A10]/95 backdrop-blur-md border-b border-amber-500/15 py-3 shadow-xl'
-              : 'bg-white/92 backdrop-blur-md border-b border-amber-500/20 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.06)]'
+              ? 'bg-[#050508]/95 backdrop-blur-xl border-b border-[#C9A84C]/20 py-2 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
+              : 'bg-white/95 backdrop-blur-xl border-b border-slate-200/80 py-2 shadow-sm'
             : isDark
-              ? 'bg-gradient-to-b from-[#070A10]/90 via-[#070A10]/40 to-transparent py-4'
-              : 'bg-gradient-to-b from-white/95 via-white/70 to-transparent py-4'
+              ? 'bg-[#050508]/75 backdrop-blur-md border-b border-white/5 py-2.5'
+              : 'bg-white/80 backdrop-blur-md border-b border-slate-200/60 py-2.5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Brand: Rounded NS Monogram & Name Only */}
+          {/* Founder Signature (Cursive Typography - Bold & Crystal Clear) */}
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="flex items-center gap-2.5 group"
+            className="flex items-center group py-0.5 select-none"
+            aria-label="Nikhil Sharma - Home"
           >
-            <div
-              className={`w-8 h-8 rounded-full border flex items-center justify-center font-display font-semibold text-xs tracking-wider shadow-inner transition-colors ${
-                isDark
-                  ? 'border-amber-400/40 bg-[#0E131F] text-amber-300 group-hover:border-amber-400'
-                  : 'border-amber-500/50 bg-amber-50 text-amber-700 group-hover:border-amber-600 shadow-sm'
-              }`}
-            >
-              NS
-            </div>
             <span
-              className={`font-display tracking-[0.16em] text-sm sm:text-base font-bold transition-colors uppercase ${
+              className={`font-signature text-3xl sm:text-4xl lg:text-[2.5rem] tracking-wide transition-all duration-300 transform group-hover:scale-105 leading-none block font-bold ${
                 isDark
-                  ? 'text-white group-hover:text-amber-200'
-                  : 'text-slate-900 group-hover:text-amber-700'
+                  ? 'text-[#F5E6C8] group-hover:text-[#E6B84A] drop-shadow-[0_2px_12px_rgba(201,168,76,0.4)]'
+                  : 'text-slate-950 group-hover:text-[#9B7B2C]'
               }`}
             >
-              {nikhilData.founder.name}
+              Nikhil Sharma
             </span>
           </a>
 
