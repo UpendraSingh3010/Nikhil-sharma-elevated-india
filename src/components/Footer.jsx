@@ -140,7 +140,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center sm:justify-end">
-            {/* Site Credits */}
+            {/* Site Credits: FabulousMedia & GoCommercially */}
             <div className="poweredBy" id="footer-site-credits">
               <a
                 href="https://play.fabulousmedia.in"
@@ -152,7 +152,21 @@ export const Footer = () => {
                 <img
                   src="https://play.fabulousmedia.in/sitecredit/images/fabulousmedia.svg"
                   alt="FabulousMedia"
-                  className={isDark ? '' : 'filter brightness-90'}
+                />
+              </a>
+
+              <div className="divider" />
+
+              <a
+                href="https://gocommercially.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GoCommercially"
+                className="creditLogo"
+              >
+                <img
+                  src="https://play.fabulousmedia.in/sitecredit/images/gocommercially.svg"
+                  alt="GoCommercially"
                 />
               </a>
             </div>

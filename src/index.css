@@ -946,41 +946,53 @@ html.light {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   width: fit-content;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+html.light .poweredBy {
+  border-color: rgba(15, 23, 42, 0.2);
+  background: rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .creditLogo {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  padding: 4px;
+  background: #ffffff;
+  padding: 4px 7px;
   border-radius: 6px;
-  opacity: 0.6;
-  transition: 0.35s ease;
+  opacity: 0.92;
+  transition: all 0.35s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .creditLogo:hover {
   opacity: 1;
   transform: translateY(-2px);
-  box-shadow: 0 0 15px rgba(253, 181, 20, 0.5);
+  box-shadow: 0 0 15px rgba(253, 181, 20, 0.6);
 }
 
 .creditLogo img {
-  height: 12px;
+  height: 13px;
   width: auto;
   display: block;
 }
 
 .poweredBy .divider {
   width: 1px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 14px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+html.light .poweredBy .divider {
+  background: rgba(15, 23, 42, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -990,6 +1002,6 @@ html.light {
   }
 
   .creditLogo img {
-    height: 10px;
+    height: 11px;
   }
 }
